@@ -11,6 +11,9 @@ class POLE: public INTERFACE
         int wybor;
         int koniec;
         int tura;
+        int wylosowane[ 1 ];
+        int wylosowanych = 0;
+        int liczba;
         char* pole(int wybor, char *znak);
         char* sprawdz();
         int wygrana(int* tura,int* number);

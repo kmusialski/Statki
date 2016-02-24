@@ -80,11 +80,10 @@ int POLE::wylosuj()
 int POLE::losuj()
 {
     srand( time( 0 ) );
-    int wylosowane[ 1 ];
-    int wylosowanych = 0;
+
     do
     {
-        int liczba = wylosuj();
+        liczba = wylosuj();
         if( czyBylaWylosowana( liczba, wylosowane, wylosowanych ) == false )
         {
             wylosowane[ wylosowanych ] = liczba;
@@ -106,6 +105,12 @@ int POLE::losuj()
 
 void POLE::statki()
 {
-    for( i = 1
+    for( int i = 1; i <= 16; i++)
+    {
+       if (dane[i] == wylosowane [wylosowanych])
+       {
+           statek[i] = true;
+       }
+    }
 }
 
