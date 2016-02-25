@@ -80,11 +80,15 @@ int POLE::wylosuj()
 int POLE::losuj()
 {
     srand( time( 0 ) );
+<<<<<<< HEAD
     int wylosowane[ 2 ];
     int wylosowanych = 0;
+=======
+
+>>>>>>> c818d735f8cb92be4f920d286a8f4141eeecc305
     do
     {
-        int liczba = wylosuj();
+        liczba = wylosuj();
         if( czyBylaWylosowana( liczba, wylosowane, wylosowanych ) == false )
         {
             wylosowane[ wylosowanych ] = liczba;
@@ -109,9 +113,19 @@ int POLE::losuj()
 
 void POLE::statek_dwu_masztowy()
 {
+<<<<<<< HEAD
 pusty[ktory] = false;
 pusty[ktory+1] = false;
 statek[ktory] = true;
 statek[ktory+1] = true;
+=======
+    for( int i = 1; i <= 16; i++)
+    {
+       if (dane[i] == wylosowane [wylosowanych])
+       {
+           statek[i] = true;
+       }
+    }
+>>>>>>> c818d735f8cb92be4f920d286a8f4141eeecc305
 }
 
