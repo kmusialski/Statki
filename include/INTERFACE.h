@@ -10,9 +10,10 @@ class INTERFACE
 
 {
     public:
-    char dane[16];
-    bool pusty[16];
-    char statek[16];
+    char dane[25];
+    bool pusty[25];
+    char statek[25];
+    int strzal;
     char *korzen;
         void settings();
         void gotoxy(int x, int y);

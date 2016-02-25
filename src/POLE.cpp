@@ -74,18 +74,14 @@ bool POLE::czyBylaWylosowana( int iLiczba, int tab[], int ile )
 
 int POLE::wylosuj()
 {
-    return( rand() % 15 ) + 1;
+    return( rand() % 25 ) + 1;
 }
 
 int POLE::losuj()
 {
     srand( time( 0 ) );
-<<<<<<< HEAD
-    int wylosowane[ 2 ];
+    int wylosowane[ 1 ];
     int wylosowanych = 0;
-=======
-
->>>>>>> c818d735f8cb92be4f920d286a8f4141eeecc305
     do
     {
         liczba = wylosuj();
@@ -94,7 +90,7 @@ int POLE::losuj()
             wylosowane[ wylosowanych ] = liczba;
             wylosowanych++;
         } //if
-    } while( wylosowanych < 2 );
+    } while( wylosowanych < 1 );
 
     wylosowanych = 0;
     do
@@ -102,30 +98,35 @@ int POLE::losuj()
         std::cout << wylosowane[ wylosowanych ] << std::endl;
 
         ktory = wylosowane[wylosowanych];
-        statek_dwu_masztowy();
+     //   statek_dwu_masztowy();
         wylosowanych++;
-    } while( wylosowanych < 2 );
+    } while( wylosowanych < 1 );
 
 
 
     return 0;
 }
 
-void POLE::statek_dwu_masztowy()
+int POLE::statek_dwu_masztowy(int &value)
 {
-<<<<<<< HEAD
-pusty[ktory] = false;
-pusty[ktory+1] = false;
-statek[ktory] = true;
-statek[ktory+1] = true;
-=======
-    for( int i = 1; i <= 16; i++)
-    {
-       if (dane[i] == wylosowane [wylosowanych])
-       {
-           statek[i] = true;
-       }
-    }
->>>>>>> c818d735f8cb92be4f920d286a8f4141eeecc305
+
+
+pusty[value] = false;
+//pusty[ktory+1] = false;
+if ( value == ktory )
+{ statek[ktory] = true;
 }
+else{
+statek[ktory] = false;
+
+return value;
+}
+   // for( int i = 1; i <= 16; i++)
+   // {
+   //    if (dane[i] == wylosowane [wylosowanych])
+    //   {
+   //        statek[i] = true;
+   //    }
+}
+
 

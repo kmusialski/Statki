@@ -22,7 +22,8 @@ class POLE: public INTERFACE
         bool czyBylaWylosowana( int iLiczba, int tab[], int ile );
         int wylosuj();
         int losuj();
-        void statek_dwu_masztowy();
+        int statek_dwu_masztowy(int &value);
+        void strzal();
     protected:
     private:
 };

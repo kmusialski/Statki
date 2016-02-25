@@ -11,6 +11,7 @@ int *tura= 0;
 int koniec = 0;
 char b = 'X';
 char znak = 'X';
+int pole;
 
 
 
@@ -28,8 +29,8 @@ int main()
     p.settings();
      p.losuj();
    // createINTERFACE();
-  //  do
-  //  {
+    do
+    {
         p.wyswietl_drzewo();
             cout<<"----------------------------------"<<endl;
             cout<<"   Gra w statki "<<endl;
@@ -44,10 +45,11 @@ int main()
             cout<<"----------------------------------"<<endl;
             cout<<"Wpisz 10 zeby zakonczyc"<<endl;
             cout<<"----------------------------------"<<endl;
-
-
+            cout<<"Podaj pole"<<endl;
+            cin>>pole;
+            p.statek_dwu_masztowy(pole);
        // p.wygrana(&tura,&koniec);
-    }
+
 
 
 
@@ -70,9 +72,8 @@ int main()
             {
                 cout<<"Podaj liczbe w naturalna w zakresie 1-9"<<endl;
             }
-        }
+        */
     }
-    while(koniec!=10);
+    while(pole!=30);
     return 0;
 }
-*/
