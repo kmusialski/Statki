@@ -26,6 +26,7 @@ char znak = 'X';
 int main()
 {
     p.settings();
+     p.losuj();
    // createINTERFACE();
   //  do
   //  {
@@ -44,7 +45,7 @@ int main()
             cout<<"Wpisz 10 zeby zakonczyc"<<endl;
             cout<<"----------------------------------"<<endl;
 
-        p.losuj();
+
        // p.wygrana(&tura,&koniec);
     }
 

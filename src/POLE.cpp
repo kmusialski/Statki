@@ -63,7 +63,7 @@ bool POLE::czyBylaWylosowana( int iLiczba, int tab[], int ile )
     int i = 0;
     do
     {
-        if( tab[ i ] == iLiczba )
+        if( tab[ i ] == iLiczba || pusty[i] == false)
              return true;
 
         i++;
@@ -74,13 +74,13 @@ bool POLE::czyBylaWylosowana( int iLiczba, int tab[], int ile )
 
 int POLE::wylosuj()
 {
-    return( rand() % 10 ) + 1;
+    return( rand() % 15 ) + 1;
 }
 
 int POLE::losuj()
 {
     srand( time( 0 ) );
-    int wylosowane[ 1 ];
+    int wylosowane[ 2 ];
     int wylosowanych = 0;
     do
     {
@@ -90,22 +90,28 @@ int POLE::losuj()
             wylosowane[ wylosowanych ] = liczba;
             wylosowanych++;
         } //if
-    } while( wylosowanych < 1 );
+    } while( wylosowanych < 2 );
 
     wylosowanych = 0;
     do
     {
         std::cout << wylosowane[ wylosowanych ] << std::endl;
+
+        ktory = wylosowane[wylosowanych];
+        statek_dwu_masztowy();
         wylosowanych++;
-    } while( wylosowanych < 1 );
+    } while( wylosowanych < 2 );
 
 
-    statki();
+
     return 0;
 }
 
-void POLE::statki()
+void POLE::statek_dwu_masztowy()
 {
-    for( i = 1
+pusty[ktory] = false;
+pusty[ktory+1] = false;
+statek[ktory] = true;
+statek[ktory+1] = true;
 }
 

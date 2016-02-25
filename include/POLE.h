@@ -15,10 +15,11 @@ class POLE: public INTERFACE
         char* sprawdz();
         int wygrana(int* tura,int* number);
 
+        int ktory;
         bool czyBylaWylosowana( int iLiczba, int tab[], int ile );
         int wylosuj();
         int losuj();
-        void statki();
+        void statek_dwu_masztowy();
     protected:
     private:
 };
