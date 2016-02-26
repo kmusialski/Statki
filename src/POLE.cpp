@@ -95,9 +95,10 @@ int POLE::losuj()
     wylosowanych = 0;
     do
     {
-        std::cout << wylosowane[ wylosowanych ] << std::endl;
+        //std::cout << wylosowane[ wylosowanych ] << std::endl;
 
-        ktory = wylosowane[wylosowanych];
+        //ktory = wylosowane[wylosowanych];
+        ktory = 2;
      //   statek_dwu_masztowy();
         wylosowanych++;
     } while( wylosowanych < 1 );

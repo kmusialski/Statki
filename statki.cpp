@@ -31,7 +31,7 @@ int main()
    // createINTERFACE();
     do
     {
-        p.wyswietl_drzewo();
+            p.wyswietl_drzewo();
             cout<<"----------------------------------"<<endl;
             cout<<"   Gra w statki "<<endl;
             cout<<"----------------------------------"<<endl;
@@ -41,9 +41,12 @@ int main()
             cout<<"9 - 10 - 11 - 12"<<endl;
             cout<<"13 -14 - 15 - 16"<<endl;
             cout<<"----------------------------------"<<endl;
-            //cout<<"Tura gracza "<<znak<<endl;
+            cout<<"Tura gracza "<<znak<<endl;
             cout<<"----------------------------------"<<endl;
             cout<<"Wpisz 10 zeby zakonczyc"<<endl;
+            cout<<" niebieska ~ - oznacza nieodkryty obszar"<<endl;
+            cout<<" zolte P oznacza pudlo"<<endl;
+            cout<<" czerwony X oznacza trafienie"<<endl;
             cout<<"----------------------------------"<<endl;
             cout<<"Podaj pole"<<endl;
             cin>>pole;
