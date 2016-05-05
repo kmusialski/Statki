@@ -9,11 +9,6 @@ void INTERFACE::settings()
         pusty[i]=true;
 
     }
-            for (int i=1; i<=25; i++)
-    {
-        statek[i] = false;
-
-    }
 }
 //-------- VOID USTAWIAJACY KURSOR W MIEJSCU X,Y NA EKRANIE --------
 

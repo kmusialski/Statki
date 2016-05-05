@@ -7,18 +7,10 @@
 class POLE: public INTERFACE
 {
     public:
-        char gracz;
-        int wybor;
-        int koniec;
-        int tura;
-        int wylosowane[ 1 ];
+        int wylosowane[ 4 ];
         int wylosowanych = 0;
         int liczba;
-        char* pole(int wybor, char *znak);
-        char* sprawdz();
-        int wygrana(int* tura,int* number);
-
-        int ktory;
+        bool czyPowtorzona();
         bool czyBylaWylosowana( int iLiczba, int tab[], int ile );
         int wylosuj();
         int losuj();

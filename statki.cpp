@@ -14,21 +14,16 @@ char znak = 'X';
 int pole;
 
 
-
-
 //-------------------------- ZMIENNE ------------------------------
 
   INTERFACE i = INTERFACE();
   POLE p = POLE();
-
-
 
 //----------------------- G£OWNY PROGRAM ----------------------------
 int main()
 {
     p.settings();
      p.losuj();
-   // createINTERFACE();
     do
     {
             p.wyswietl_drzewo();
@@ -36,10 +31,11 @@ int main()
             cout<<"   Gra w statki "<<endl;
             cout<<"----------------------------------"<<endl;
             cout<<"Pola"<<endl;
-            cout<<"1 - 2 -  3 -  4"<<endl;
-            cout<<"5 - 6 -  7 -  8"<<endl;
-            cout<<"9 - 10 - 11 - 12"<<endl;
-            cout<<"13 -14 - 15 - 16"<<endl;
+            cout<<"1  - 2  - 3  - 4  - 5"<<endl;
+            cout<<"6  - 7  - 8  - 9  - 10"<<endl;
+            cout<<"11 - 12 - 13 - 14 - 15"<<endl;
+            cout<<"16 - 17 - 18 - 19 - 20"<<endl;
+            cout<<"21 - 22 - 23 - 24 - 25"<<endl;
             cout<<"----------------------------------"<<endl;
             cout<<"Tura gracza "<<znak<<endl;
             cout<<"----------------------------------"<<endl;
@@ -51,31 +47,6 @@ int main()
             cout<<"Podaj pole"<<endl;
             cin>>pole;
             p.statek_dwu_masztowy(pole);
-       // p.wygrana(&tura,&koniec);
-
-
-
-
-
-
-  /*
-        if(koniec==10){break;}
-        else{
-            cin>>wybor;
-            cout<<endl;
-            if (wybor > 0 && wybor < 10)
-            {
-                p.pole(wybor, &znak);
-               // gracz = p.sprawdz();
-
-               // gracz =
-
-            }
-            else if (wybor != 10)
-            {
-                cout<<"Podaj liczbe w naturalna w zakresie 1-9"<<endl;
-            }
-        */
     }
     while(pole!=30);
     return 0;

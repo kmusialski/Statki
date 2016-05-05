@@ -13,6 +13,7 @@ class INTERFACE
     char dane[25];
     bool pusty[25];
     bool statek[25];
+//    int ile =0;
     int strzal;
     char *korzen;
         void set_color();
